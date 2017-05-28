@@ -1,0 +1,50 @@
+git
+
+usluga koja pruža uslugu krištenja 
+git protokol (projekt Linuxa)
+
+sustav verzioniranja
+bitbucket
+
+komadi koda koji su otvoreni, javni koje je moguæe skinuti i koristi kao svoj
+
+naredba
+
+
+Git naredbe
+
+pwd - daje informaciju gdje se trnutno nalazim
+ls - popis mapa,datoteka i sl.
+dva puta tab - nadopunjavanje putanja		
+
+cd desktop - change directory, promjena mape u koju želimo uæi
+
+git status - provjera napravljenih izmjena
+
+git add . - dodavanje fileova za commit
+
+git config --golbal user.name "" - konfiguracija,samo jednom upisati ime izmeðu navodnika
+
+
+git config --golbal user.email "" - konfiguracija emaila
+
+
+git echo "" - ispisivanje komada teksta izmeðu navodnika
+
+git echo "Bok" >> README
+
+git init - prazan repozizitorij inicijaliziran u odreðenom folderu
+
+git add  - može se dodati samo jedan file
+
+git add . - dodavanje svih fileova
+
+git commit -m "" - dodavanje filova
+
+git push -u origin master - postavljanje filova na repozitorij
+
+git remote add origin (paste linka) za putanju - povezauje se sa serverom
+
+
+SourceTree --> grafièko suèelje za GIT
+ 

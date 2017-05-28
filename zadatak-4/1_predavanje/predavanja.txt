@@ -1,0 +1,13 @@
+web - servis interneta, sustav IP, tcp
+	mailovi
+	web stranice
+
+internet- mreža raèunala
+
+ARPANET
+
+HTML - hypertext markup language
+CSS - cascade style sheet
+
+
+

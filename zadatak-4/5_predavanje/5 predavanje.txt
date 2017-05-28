@@ -1,0 +1,13 @@
+bootstrap
+
+front-end framowrk
+grid (css layout) - responsive, definirani elementi
+columne koje se ne prikazuju
+
+paketi ikona koji se koriste za font, button, label, navigacija oblikovanja stilovi
+
+bootsrap - minimiziran kod (široko napisan, minimizar, kompresija razmaka i praznog prostora)
+
+source code - originalan kod koji se može modificirati,pregledati
+
+teme - odreðivanje 

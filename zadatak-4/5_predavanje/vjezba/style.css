@@ -1,0 +1,11 @@
+.btn-default {
+  background: #000000;
+  color: #ffffff;
+}
+
+.btn-moje {
+  background: pink;
+  color: white;
+  padding: 0 20px 0px 20px;
+  font-size: 16px;
+}
