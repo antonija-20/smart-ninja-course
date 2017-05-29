@@ -18,7 +18,7 @@
     </head>
     <body>
 
-      <nav class="navbar navbar-default">
+      <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
 
           <div class="container">
@@ -39,10 +39,10 @@
           </form>
 
             <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="#">Our services</a></li>
-              <li><a href="#">Make an appointment</a></li>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">About us</a></li>
+              <li class="active"><a href="#navScroll1">Our services</a></li>
+              <li><a href="#navScroll2">Make an appointment</a></li>
+              <li><a href="#navScroll3">FAQ</a></li>
+              <li><a href="#navScroll4">About us</a></li>
             </ul>
 
         </div>
@@ -56,38 +56,128 @@
         </div>
       </header>
 
-      <div class="container">
+      <div id="navScroll1"class="container">
         <h2>Our services</h2>
       </div>
 
       <div class="container">
         <div class="row">
+
           <div class="col-md-4">
-            <h3>Styling</h3>
-              <span class="glyphicon glyphicon-star"></span>
+            <div class="panel">
+              <div class="panel-heading panel-spacing">
+                <h3 class="panel-title">Styling <i class="glyphicon glyphicon-log-out pull-right"></i></h3>
+              </div>
+              <div class="panel-body img-card-1">
+
+              </div>
+            </div>
           </div>
 
-          <div class="col-md-4">Coloring</div>
-          <div class="col-md-4">Haircuts</div>
+          <div class="col-md-4">
+            <div class="panel">
+              <div class="panel-heading panel-spacing">
+                <h3 class="panel-title">Coloring <i class="glyphicon glyphicon-log-out pull-right"></i></h3>
+              </div>
+              <div class="panel-body img-card-2">
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="panel">
+              <div class="panel-heading panel-spacing">
+                <h3 class="panel-title">Hairstayle <i class="glyphicon glyphicon-log-out pull-right"></i></h3>
+              </div>
+              <div class="panel-body img-card-3">
+
+              </div>
+            </div>
+          </div>
+
+
+
         </div>
       </div>
 
-      <div class="container">
+
+
+      <div id="navScroll2" class="container">
         <h2>Make an appointment</h2>
       </div>
 
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
-            kontakt forma
+          <div class="col-md-4 col-md-offset-1">
+
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="First and last name">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Phone number">
+            </div>
+            <div class="form-group">
+              <input type="date" class="form-control" placeholder="Date">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" rows="5" placeholder="mmmm"></textarea>
+            </div>
+            <div class="form-group">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox"> I agree that Hans is the best friseur
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+               <button type="submit" class="btn btn-primary center-block">SEND A MESSAGE</button>
+           </div>
+
+
           </div>
-          <div class="col-md-6">
-            raspored otvorenja
+          <div class="col-md-4 col-md-offset-2">
+            <table class="table table-bordered">
+              <tr>
+               <th>Day</th>
+               <th>Working hours</th>
+             </tr>
+             <tr>
+               <td>Monday</td>
+               <td>08.00 - 16.00</td>
+             </tr>
+             <tr>
+               <td>Thusday</td>
+               <td>10.00 - 18.00</td>
+             </tr>
+             <tr>
+               <td>Wednesday</td>
+               <td>08.00 - 16.00</td>
+             </tr>
+             <tr>
+               <td>Thursday</td>
+               <td>08.00 - 16.00</td>
+             </tr>
+             <tr>
+               <td>Friday</td>
+               <td>12.00 - 20.00</td>
+             </tr>
+             <tr>
+               <td>Saturday</td>
+               <td>08.00 - 16.00</td>
+             </tr>
+             <tr>
+               <td>Sunday</td>
+               <td>08.00 - 16.00</td>
+             </tr>
+            </table>
+            <p>*We dont work on holidays</p>
           </div>
         </div>
       </div>
 
-      <div class="container">
+
+      <div id="navScroll3" class="container">
         <h2>FAQ</h2>
       </div>
 
@@ -103,7 +193,11 @@
             </div>
 
             <div id="collapse1" class="panel-collapse collapse in">
-              <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+              <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
             </div>
 
           </div>
@@ -116,7 +210,11 @@
             </div>
 
           <div id="collapse2" class="panel-collapse collapse">
-            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            <div class="panel-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
           </div>
 
         </div>
@@ -128,7 +226,10 @@
             </h4>
           </div>
           <div id="collapse3" class="panel-collapse collapse">
-            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            <div class="panel-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
           </div>
         </div>
@@ -136,23 +237,47 @@
 
     </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          kontakt informacije
-        </div>
-        <div class="col-md-4">
-          facebook feed
-        </div>
-        <div class="col-md-4">
-          sitemap
+    <footer id="navScroll4">
+        <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h3>Contact</h3>
+            <p>Friseur Hans GmbH</p>
+            <p>Tax number: <strong>5565665555</strong></p>
+            <p>Friseurgasse 5, 1020 Wien</p>
+            <p>Phone: <strong>555 8555 8888</strong></p>
+            <p>e-mail: <strong>friseurhans@hans.com</strong></p>
+          </div>
+          <div class="col-md-4">
+            <div class="image-footer">
+            </div>
+          </div>
+          <div class="col-md-3 col-md-offset-1">
+            <h3>Navigation</h3>
+            <p><a href="#">Our services</a></p>
+            <p><a href="#">Make appointment</a></p>
+            <p><a href="#">FAQ</a></p>
+            <p><a href="#">About us</a></p>
+          </div>
         </div>
       </div>
-    </div>
+    </footer>
 
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="bootstrap.js"></script>
+    <script>
+    // https://www.abeautifulsite.net/smoothly-scroll-to-an-element-without-a-jquery-plugin-2
 
-
-
+      $('a[href^="#"]').on('click', function(event) {
+        var target = $(this.getAttribute('href'));
+        if( target.length ) {
+          event.preventDefault();
+          $('html, body').stop().animate({
+            scrollTop: target.offset().top
+          }, 1000);
+        }
+      });
+    </script>
 
 
 </body>
