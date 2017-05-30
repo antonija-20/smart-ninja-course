@@ -1,0 +1,7 @@
+phyton
+
+aplikacija koja kontinuirano radi na serveru
+prvo se uèitava pozadinski kod, a onda ostale aplikacije
+
+CMS sustavi
+
