@@ -39,7 +39,7 @@
   background-image: url(../img/hero-img.jpg);
   background-position: center center;
   background-size: cover;
-  height: 500px;
+  height: 600px;
   margin-top: -20px;
 }
 
@@ -109,6 +109,33 @@ h3 {
   padding: 8px 15px 8px 15px;
 }
 
+.container-gray {
+  background-color: #f1f1f1;
+  padding-bottom: 30px;
+}
+
+.table-striped-custom > tbody > tr:nth-of-type(odd) {
+  background-color: #ff931e;
+  color: #fff;
+}
+
+.panel-default > .panel-heading-custom {
+    color: #fff;
+    background-color: #ff931e;
+    border-color: #ddd;
+  }
+
+.panel-group .panel-heading-custom {
+    border-bottom: 0;
+  }
+
+  .panel-heading-custom {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+
 
 footer {
   margin-top: 50px;
@@ -123,4 +150,13 @@ footer {
   background-size: cover;
   height: 200px;
   width: 70%;
+}
+
+.footer-link {
+  color: #ff931e;
+}
+
+.footer-link:hover {
+  color: #ff931e;
+  opacity: 0.5;
 }
