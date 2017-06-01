@@ -7,3 +7,4 @@ print(str(x) + y)
 a = input("Unesi prvi broj: ")
 b = int(raw_input("Unesi drugi broj: "))
 print(a + b)
+
