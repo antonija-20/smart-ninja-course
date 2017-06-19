@@ -6,4 +6,4 @@ def lottery():
     return brojevi
 
 
-print "Brojevi su " + format(lottery())
+print "Brojevi su " + str(lottery())

@@ -1,0 +1,5 @@
+proceduralno programiranje
+funkcijsko programiranje
+
+objektno programiranje
+    mogućnost dodavanja funkcija
