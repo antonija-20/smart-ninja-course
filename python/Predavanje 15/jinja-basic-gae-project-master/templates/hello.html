@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Smart Ninja homepage{% endblock title %}
+{% block content %}
+
+    <h1>Hello!</h1>
+
+    <h2>{{ title }}</h2>
+        {% if number > 1  %}
+            <p>danas imamo nadoknadu</p>
+        {% else %}
+            <p>danas nema nadokande</p>
+        {% endif %}
+    <p>Broj predavanja koji ćemo imati danas: {{ number }}</p>
+
+    <form method="post">
+        <input type="text" name="text-input" placeholder="naslov"/>
+        <input type="text" name="broj-input" placeholder="broj"/>
+        <input type="submit" value="Submit" />
+    </form>
+{% endblock content %}

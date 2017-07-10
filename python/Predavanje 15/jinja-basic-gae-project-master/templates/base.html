@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}{% endblock title %}</title>
+        <link rel="stylesheet" href="/assets/css/style.css">
+    </head>
+<body>
+
+    <nav>
+
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/calculator">Calculator</a></li>
+            <li><a href="/test">Test</a></li>
+        </ul>
+
+    </nav>
+    {% block content %}{% endblock content %}
+
+</body>
+</html>
