@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}To Do list{%endblock title%}
+{% block content %}
+
+
+<h1>Edit tasks</h1>
+
+{{ task.task }}
+
+<h3>Edit task {{ task.task }}</h3>
+<form method="post">
+
+    <input type="text" name="task" value="{{task.task}}" />
+    <input type="checkbox" name="done" value="1" {% if task.done %} checked {% endif %} />
+    <input type="submit" value="update task" />
+    <a href="/">Cancel</a>
+
+</form>
+
+{{ done }}
+
+{% endblock content %}

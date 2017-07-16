@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Message app{%endblock title%}
+{% block body %}
+
+
+    <h1>Hello, today my message :)</h1>
+    <form method="post">
+        <input type="text" name="message" />
+        <input type="submit" value="save message" />
+    </form>
+
+    <p>{{ message }}</p>
+
+{% endblock body %}

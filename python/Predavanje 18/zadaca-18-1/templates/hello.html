@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}GuestBook{%endblock title%}
+{% block body %}
+
+
+    <h1>GuestBook</h1>
+
+
+    <form method="post" class="forma">
+
+        <label>Enter your user name</label>
+        <input type="text" name="name" placeholder="enter your name...">
+
+        <label>Enter your email *</label>
+        <input type="text" name="email" placeholder="enter your email...">
+
+        <label>Enter your message *</label>
+        <input type="text" name="message" placeholder="enter your message...">
+
+        <label>Enter date</label>
+        <input type="text" name="message" placeholder="enter date...">
+
+
+        <input type="submit" value="save the message">
+
+    </form>
+
+
+
+{% endblock body %}
