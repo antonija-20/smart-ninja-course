@@ -1,0 +1,28 @@
+{% extends "basic.html" %}
+{% block title %}delete{%endblock title%}
+{% block content %}
+
+<div class="container">
+    <div class="col-12-margin">
+        <a href="/messages" class="glogin-small">Go back to messages</a>
+    </div>
+
+    <div class="col-12">
+        <hr />
+
+    <h4>Delete message</h4>
+
+
+        <form method="post">
+
+            <p><strong>Author:</strong> {{ message.author_name }}<br />
+                <strong>Email:</strong> {{ message.email }}</p>
+            <p><strong>Message: </strong>{{ message.message }}</p>
+            <button type="submit" class="glogin">Delete this message</button>
+
+        </form>
+    </div>
+</div>
+
+
+{% endblock content %}

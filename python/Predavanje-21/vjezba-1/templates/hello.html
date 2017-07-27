@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}To Do list{%endblock title%}
+{% block content %}
+
+
+<h1>TODO aplikacija</h1>
+
+<h2>Task list</h2>
+    <form method="post">
+        <input type="text" name="task">
+        <input type="submit" value="add task">
+    </form>
+
+<p></p>
+<table>
+    {% for task in tasks %}
+    <tr>
+        <td>
+            {{ task.task }}
+        </td>
+        <td>
+            {{ task.done }}
+        </td>
+        <td>
+            <a href="/delete/{{ task.key.id() }}">Delete</a>
+            <a href="/edit/{{ task.key.id() }}">Edit</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
+
+{% endblock content %}

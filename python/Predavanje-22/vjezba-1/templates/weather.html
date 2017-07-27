@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather now</title>
+</head>
+<body>
+
+    {{ data.coord.lon }}
+
+    {% for row in data.weather %}
+        {{ row.description }}
+    {% endfor %}
+
+</body>
+</html>

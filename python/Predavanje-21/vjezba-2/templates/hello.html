@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>SmartNinja basic Jinja template</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <h1>User login</h1>
+
+
+     <a href="{{ user_url }}">
+        {% if is_user %}
+            Logout
+        {% else %}
+            Login
+        {% endif %}
+     </a>
+
+<p>
+     {% if is_user %}
+            <p>{{ user }}</p>
+            <p>{{user.email() }}</p>
+            <p>{{user.nickname() }}</p>
+        {% endif %}
+</p>
+
+
+</body>
+</html>

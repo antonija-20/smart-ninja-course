@@ -1,0 +1,122 @@
+{% extends "basic.html" %}
+{% block title %}Welcome to your messages{%endblock title%}
+
+{% block content %}
+
+<div class="container">
+
+    <h3>Welcome to your messages, <span class="usemail">{{ user.email() }}</span></h3>
+
+        <div class="row">
+            <div class="col-12">
+
+                <div class="tab">
+                  <button class="tablinks active" onclick="openCity(event, 'inbox')">Inbox</button>
+                  <button class="tablinks" onclick="openCity(event, 'send')">Send</button>
+                  <button class="tablinks" onclick="openCity(event, 'createmail')">Create a new email</button>
+                  <button class="tablinks" onclick="openCity(event, 'deletemessage')">Deleted message</button>
+                </div>
+
+                <div id="inbox" class="tabcontent" style="display:block;">
+
+                    <h4>Inbox messages</h4>
+                        {% for message in messages %}
+                            <p>
+                                <strong><a href="mailto:{{message.email}}">{{ message.author_name }}</a></strong>
+                                at {{ message.created.strftime('%d %B %Y at %H:%M') }}:
+                                <br/><br/>
+                                from: {{ message.email }}
+                                <br/><br/>
+                                Subject: {{ message.subject }}
+                                <br/>
+                                Message: <em>{{ message.message }}</em>
+                            </p>
+                            <br>
+                        {% else %}
+                            <p>No messages yet.</p>
+                        {% endfor %}
+
+                </div>
+
+                <div id="send" class="tabcontent" style="display:block;">
+
+                    <h4>Send messages</h4>
+                        {% for message in messages %}
+                            <p>
+                                <strong><a href="mailto:{{message.email}}">{{ message.author_name }}</a></strong>
+                                at {{ message.created.strftime('%d %B %Y at %H:%M') }}:
+                                (<a href="/message/{{message.key.id()}}/edit">edit</a>,
+                                <a href="/message/{{message.key.id()}}/delete">delete</a>)
+                                <br/><br/>
+                                from: {{ message.email }} <br/> to: {{ message.sendto }}
+                                <br/><br/>
+                                Subject: {{ message.subject }}
+                                <br/>
+                                Message: <em>{{ message.message }}</em>
+                            </p>
+                            <br>
+                        {% else %}
+                            <p>No messages yet.</p>
+                        {% endfor %}
+
+                </div>
+
+                <div id="createmail" class="tabcontent" style="display:none;">
+                  <h4>Create a new email</h4>
+
+                    {% if user %}
+
+                    <form method="post">
+                        <p><strong>From:</strong> {{ user.email() }}</p>
+
+                        <p><strong>Your name: </strong><br/>
+                            <input type="text" name="name" placeholder="your name"><br/><br/>
+                        <strong>To: </strong><br />
+                            <input type="text" name="to-mail" placeholder="to"><br/><br/>
+                        <strong>Subject: </strong> <br />
+                            <input type="text" name="to-subject" placeholder="subject"></p>
+
+                        <p><strong>Your message</strong>
+                            <textarea name="message" rows="10" cols="80" placeholder="your message" required></textarea></p>
+
+                        <button type="submit" class="glogin">Send your email</button>
+                    </form>
+
+                    {% else %}
+
+                    <p>Please login </p>
+
+                    {% endif %}
+
+                    <div class="clearfix"></div>
+                </div>
+
+                <div id="deletemessage" class="tabcontent" style="display:none;">
+                  <h4>Deleted messages</h4>
+
+                        {% for message in messages %}
+                            <p>
+                                <strong><a href="mailto:{{message.email}}">{{ message.author_name }}</a></strong>
+                                at {{ message.created.strftime('%d %B %Y at %H:%M') }}:
+                                (<a href="/message/{{message.key.id()}}/restore">restore</a>,
+                                <a href="/message/{{message.key.id()}}/complete-delete">permanently delete</a>)
+                                <br>
+                                <em>{{ message.message }}</em>
+                            </p>
+                            <br>
+                        {% else %}
+                            <p>No messages yet.</p>
+                        {% endfor %}
+
+                </div>
+
+            </div>
+
+        </div>
+
+</div>
+
+
+
+
+{% endblock content %}

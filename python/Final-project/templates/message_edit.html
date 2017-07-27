@@ -1,0 +1,25 @@
+{% extends "basic.html" %}
+{% block title %}edit{%endblock title%}
+{% block content %}
+
+<div class="container">
+    <div class="col-12-margin">
+        <a href="/messages" class="glogin-small">Go back to messages</a>
+    </div>
+
+    <div class="col-12">
+        <hr />
+
+        <h4>Edit message</h4>
+
+        <form method="post">
+            <p><strong>Author:</strong> {{ message.author_name }} <br />
+            <strong>Email:</strong> {{ message.email }}</p>
+            <p><textarea name="message" rows="10" cols="80">{{ message.message }}</textarea></p>
+            <button type="submit" class="glogin">Save message</button>
+        </form>
+    </div>
+
+</div>
+
+{% endblock content %}

@@ -1,0 +1,23 @@
+{% extends "basic.html" %}
+{% block title %}Smart Ninja final project{%endblock title%}
+{% block content %}
+
+<div class="container">
+    <div class="col-12-margin">
+        <a href="/messages" class="glogin-small">Go Back to messages</a>
+    </div>
+
+    <div class="col-12">
+        <h4>Weather app</h4>
+
+        <h6>{{ data.coord.lon }}</h6>
+
+        <h6>{% for row in data.weather %}
+            {{ row.description }}
+            {% endfor %}</h6>
+
+    </div>
+
+</div>
+
+{% endblock content %}

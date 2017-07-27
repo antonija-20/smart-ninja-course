@@ -1,0 +1,20 @@
+{% extends "basic.html" %}
+{% block title %}Smart Ninja final project{%endblock title%}
+{% block content %}
+
+<div class="container">
+    <h3>Permanently delete message</h3>
+
+    <form method="post">
+        <p><strong>Permanently delete message</strong></p>
+
+        <p><strong>Author name:</strong> {{ message.author_name }}</p>
+
+        <p><strong>Author email:</strong> {{ message.email }}</p>
+
+        <p><strong>Message: </strong>{{ message.message }}</p>
+
+        <button type="submit">Permanently delete this message</button>
+    </form>
+</div>
+{% endblock content %}

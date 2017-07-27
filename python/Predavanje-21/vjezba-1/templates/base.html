@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>To DO application</title>
+        <link rel="stylesheet" href="/assets/css/style.css">
+    </head>
+<body>
+
+
+     <a href="{{ user_url }}">
+        {% if is_user %}
+            Logout
+        {% else %}
+            Login
+        {% endif %}
+     </a>
+        {% if is_user %}
+            {{ user }}
+            {{user.email() }}
+            {{user.nickname() }}
+        {% endif %}
+
+
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Delete posts</a></li>
+            <li><a href="/">Edit posts</a></li>
+        </ul>
+    </nav>
+
+
+    {% block content %}{% endblock content %}
+
+
+</body>
+</html>
